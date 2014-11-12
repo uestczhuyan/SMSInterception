@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_content_bg"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+	
+	<TextView 
+	     android:layout_width="0dp"
+	     android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:text="aasdasdja;sdjklasdjaswpdjas;dljasdui0pjzxcjap'swdias'dasdiasd;l"
+        android:id="@+id/interceptionlist_content"
+	    />
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:text="删除"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:id="@+id/interceptionlist_delete"
+	    android:clickable="true"
+	    />
+</LinearLayout>

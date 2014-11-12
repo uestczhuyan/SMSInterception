@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+   <include layout="@layout/title_layout"
+       android:id="@+id/title_layout"
+       />
+   
+ <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="left"
+       android:id="@+id/setting_auto_reply_tv"
+       android:text="全部自动回复" 
+       android:padding="10dp"
+       android:layout_below="@+id/title_layout"
+       android:textSize="20sp"
+       />
+ 
+ <CheckBox
+     android:id="@+id/setting_auto_reply_checkbox"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/setting_auto_reply_tv"
+     android:layout_alignBottom="@+id/setting_auto_reply_tv"
+     android:layout_marginRight="10dp"
+     android:layout_alignParentRight="true" />
+ 
+ <TextView 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/setting_auto_reply_tv"
+     android:layout_marginTop="5dp"
+     android:padding="5dp"
+     android:text="@string/setting_auto_reply_content"
+     android:id="@+id/setting_auto_reply_content"
+     android:textSize="16sp"
+     android:gravity="center"
+     android:textColor="@color/gray"
+     />
+ 
+ <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/setting_auto_reply_content"
+     android:layout_marginTop="15dp"
+     android:padding="10dp"
+     android:text="智能回复"
+     android:id="@+id/setting_brain_reply_tv"
+     android:textSize="20sp"
+     />
+ 
+ <CheckBox 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignRight="@+id/setting_auto_reply_checkbox"
+     android:layout_alignBottom="@+id/setting_brain_reply_tv"
+     android:id="@+id/setting_brain_reply_checkbox"
+     />
+ 
+  <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/setting_brain_reply_checkbox"
+     android:layout_marginTop="15dp"
+     android:padding="10dp"
+     android:text="自定义回复"
+     android:id="@+id/setting_hand_reply_tv"
+     android:textSize="20sp"
+     />
+ 
+ <CheckBox 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignRight="@+id/setting_auto_reply_checkbox"
+     android:layout_alignBottom="@+id/setting_hand_reply_tv"
+     android:id="@+id/setting_hand_reply_checkbox"
+     />
+ 
+ <EditText 
+     android:layout_width="fill_parent"
+     android:layout_height="120dp"
+     android:layout_below="@+id/setting_hand_reply_tv"
+     android:padding="5dp"
+     android:layout_marginLeft="15dp"
+     android:layout_marginRight="15dp"
+     android:background="@android:color/white"
+     android:id="@+id/setting_reply_edit"
+     android:textSize="20sp"
+     />
+
+</RelativeLayout>

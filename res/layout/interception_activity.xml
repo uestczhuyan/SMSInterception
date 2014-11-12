@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+  <include layout="@layout/title_layout"/>
+   
+  <EditText 
+      android:layout_width="fill_parent"
+      android:layout_height="100dp"
+      android:layout_margin="10dp"
+      android:background="@drawable/list_content_bg"
+      android:id="@+id/interception_activity_edit"
+      />
+  
+  <Button 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="添加"
+      android:background="@drawable/long_button"
+      android:id="@+id/interception_activity_addBtn"
+      />
+ 
+   <ListView 
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:layout_margin="5dp"
+       android:id="@+id/interception_activity_list"
+        android:scrollingCache="false"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+       ></ListView>
+   
+
+</LinearLayout>

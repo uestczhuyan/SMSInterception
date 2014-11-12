@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">短信拦截</string>
+    <string name="action_settings">设置</string>
+    <string name="action_exit">退出</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+	<string name="no_msgs">没有垃圾短信</string>   
+	<string name="main_title">垃圾短信</string>
+	<string name="setting_title">设置</string>
+	<string name="delet_msg">是否要删除该垃圾短信</string>
+	
+	<string name="setting_open">手动拦截</string>
+	<string name="setting_interception_words">设置拦截词</string>
+	<string name="setting_reply">是否自动回复</string>
+	<string name="setting_reply_content">自动回复内容</string>
+	<string name="setting_auto_reply_content">谢谢您的祝福，也祝你阖家幸福，生活事业一帆风顺</string>
+	
+	<string name="interception_title">拦截词</string>
+	<string name="delet_interception">是否要删除该关键词</string>
+	<string name="start_time">开始时间</string>
+	<string name="end_time">结束时间</string>
+	<string-array name="time_choose">
+	    <item >每天24小时拦截</item>
+	    <item >周末时间段拦截，平时24小时拦截</item>
+	    <item >节假日时间段拦截，平时24小时拦截</item>
+	</string-array>
+</resources>
