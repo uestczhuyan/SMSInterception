@@ -13,10 +13,10 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" 
-        android:name="com.zhuyan.smsinterception.MyApplication"
+        android:name="com.project.smsinterception.MyApplication"
         >
         <activity
-            android:name="com.zhuyan.smsinterception.ui.MainActivity"
+            android:name="com.project.smsinterception.ui.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,19 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity android:name="com.zhuyan.smsinterception.ui.SettingActivity" ></activity>
-          <activity android:name="com.zhuyan.smsinterception.ui.SettingRecActivity" ></activity>
-         <activity android:name="com.zhuyan.smsinterception.ui.InterceptionWordsActivity" ></activity>
+         <activity android:name="com.project.smsinterception.ui.SettingActivity" ></activity>
+          <activity android:name="com.project.smsinterception.ui.SettingRecActivity" ></activity>
+         <activity android:name="com.project.smsinterception.ui.InterceptionWordsActivity" ></activity>
          
-           <receiver android:name="com.zhuyan.smsinterception.receiver.SMSReceiver">
+           <receiver android:name="com.project.smsinterception.receiver.SMSReceiver">
             <intent-filter android:priority="1000">
                <action android:name="android.provider.Telephony.SMS_RECEIVED" /> 
             </intent-filter>
         </receiver>
          
-        <service android:name="com.zhuyan.smsinterception.ui.TestService"></service>
+        <service android:name="com.project.smsinterception.ui.TestServicece"></service>
            
-         <provider android:name="com.zhuyan.smsinterception.provider.BaseContentProvider" 
+         <provider android:name="com.project.smsinterception.provider.BaseContentProvider" 
             android:authorities="com.zhuyan.smsinterception.provider"></provider>
     </application>
 
